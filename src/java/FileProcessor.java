@@ -11,4 +11,8 @@ public class FileProcessor {
     public void setRowsAndColumns(String[][] rowsAndColumns) {
         this.rowsAndColumns = rowsAndColumns;
     }
+
+    public void readFile(String path){
+        
+    }
 }
