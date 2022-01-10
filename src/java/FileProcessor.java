@@ -1,3 +1,8 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+
 public class FileProcessor {
     private String[][] rowsAndColumns;
 
@@ -12,7 +17,13 @@ public class FileProcessor {
         this.rowsAndColumns = rowsAndColumns;
     }
 
-    public void readFile(String path){
-        
+    public List<String> readFile(String path) throws IOException {
+        List<String> lines = Files.readAllLines(Paths.get(path));
+
+        return lines;
+    }
+
+    public void processFileData(){
+
     }
 }
